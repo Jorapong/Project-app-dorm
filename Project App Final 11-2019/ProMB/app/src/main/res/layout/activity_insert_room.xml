@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/edit_del"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD Room"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="25sp"/>
+    <ScrollView
+        android:background="#FFFFFF"
+        android:layout_below="@+id/edit_del"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/btnAdd">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/btnUpdate">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Room ID ."
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/edit_roomid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="15sp"
+                android:hint="Edit RID"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Tel."
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/edit_dormid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="15sp"
+                android:hint="Edit DID" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Room Name(ประเภทห้อง)"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/edit_roomname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:hint="Edit Roomname" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Price."
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/edit_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="15sp"
+                android:hint="Edit Price" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Room Avariable (จำนวนห้องที่เหลือ)"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/edit_avariable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="15sp"
+                android:hint="Edit Avariable" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Amount Room (จำนวนห้องทั้งหมด)"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/edit_Amoutroom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:hint="Edit Amount Room" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Room Img link"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/edit_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:hint="Edit Img link" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Bed.(เตียงคู่,เตียงเดี่ยว)"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/edit_bed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:hint="Bed" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Air."
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/edit_air"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:hint="Air" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Fan"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/edit_fan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:hint="Fan" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Water heater"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/edit_wh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:hint="Edit Water heater" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Bill (ค่าน้ำ/ค่าไฟ)"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/edit_bill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:hint="Bill" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Insure.(ค่าประกันห้อง)"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/edit_insure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:hint="Insure" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Internet"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/edit_internet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:hint="Internet" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Animal"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/edit_animal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:hint="Animal" />
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#00E676"
+        android:text="ADD"
+        android:onClick="AddRoom"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/btnReset"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="#E95B3D"
+        android:onClick="Reset"
+        android:text="Reset"
+        android:textSize="20sp" />
+
+</RelativeLayout>

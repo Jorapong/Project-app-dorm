@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/edit_del"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit OR Delete Dorm"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+    <ScrollView
+        android:background="#FFFFFF"
+        android:layout_below="@+id/edit_del"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/btnUpdate">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/btnUpdate">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Dorm ID"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/edit_dormid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="15sp"
+        android:hint="Edit DID"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="User ID"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/edit_userid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="15sp"
+        android:hint="Edit UID" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Dorm Name"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/edit_dormmname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:hint="Edit name" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Dorm Amount(จำนวนห้องทั้งหมด)"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/edit_Damount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="15sp"
+        android:hint="Edit DormAmount" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Dorm Link Image"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/edit_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:hint="Edit Img link" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Rate Price (EX.3,500-9,000)"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/edit_Rprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="15sp"
+        android:hint="Edit RatePrice" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Map Link Image"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/edit_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:hint="Edit Map" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Zone"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/edit_Zone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:hint="Edit Zone" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Tel."
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/edit_Tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:hint="Edit Tel" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Page Facebook"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/edit_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:hint="Edit Page" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#00E676"
+        android:text="Update"
+        android:onClick="saveDorm"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/btnDelete"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#E95B3D"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="Delete"
+        android:onClick="deleteDorm"
+        android:textSize="20sp" />
+</RelativeLayout>
